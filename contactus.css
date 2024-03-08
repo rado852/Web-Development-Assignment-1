@@ -1,0 +1,155 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 235, 204);
+}
+nav img{
+    width: 120px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #07ce11;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #e4fdde;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #e4fdde;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    background: #ffffff;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+.info-box {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 5px;
+}
+.info-box p{
+    padding-top: 10px;
+    text-align: center;
+}
+.info-box h3{
+    text-align: center;
+}
+
+.form-section {
+    background: #3498db;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 300px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #27ae60;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+        margin: 0 0 20px 0;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    visibility: visible;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-weight: 600;
+    color: black;
+}
+.footer p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
